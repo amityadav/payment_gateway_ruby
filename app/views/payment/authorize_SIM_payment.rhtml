@@ -1,0 +1,23 @@
+<!--<FORM METHOD=POST ACTION= "https://developer.authorize.net/param_dump.asp">-->
+<FORM METHOD=POST ACTION= "https://test.authorize.net/gateway/transact.dll">
+
+<INPUT TYPE=HIDDEN NAME="x_version" VALUE="3.1">
+
+<INPUT TYPE=HIDDEN NAME="x_login" VALUE="27Bt7Rp5kH">
+
+<INPUT TYPE=HIDDEN NAME="x_show_form" VALUE="PAYMENT_FORM">
+
+<INPUT TYPE=HIDDEN NAME="x_method" VALUE="CC"> 
+
+<INPUT TYPE=HIDDEN NAME="x_amount" VALUE="0.01">
+
+<%=@str%>
+<INPUT TYPE=HIDDEN NAME="x_receipt_link_method" VALUE="POST">
+
+<INPUT TYPE=HIDDEN NAME="x_receipt_link_text" VALUE="Return to www.amityadav.name">
+
+<INPUT TYPE=HIDDEN NAME="x_receipt_link_URL" VALUE="http://localhost:3005/payment/authprize_comoplete">
+
+<INPUT TYPE=SUBMIT VALUE="Click here for the secure payment form"> 
+
+</FORM> 

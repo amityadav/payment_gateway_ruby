@@ -1,0 +1,7 @@
+<%=debug(params)%>
+
+<% if params[:status] == "SE"%>
+A system error (SE) indicates that your co-branded UI pipeline request has temporally failed in Amazon
+FPS. You can retry the pipeline requests again.
+<%=link_to "Start Again", :controller => "amazon", :action => "index"%>
+<%end%>
